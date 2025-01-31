@@ -6,8 +6,66 @@
     <title>Living Lab</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-    
+<body class="bg-[#fefbee]">
+
+    <!-- Navbar -->
+    <nav class="navbar bg-[#fefbee] shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center space-x-2">
+                <span class="text-yellow-500 text-2xl">🐾</span>
+                <h1 class="text-xl font-bold">Browse4Pets</h1>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="hover:text-yellow-500">Find a pet</a>
+                <a href="#" class="hover:text-yellow-500">Breeds</a>
+                <a href="#" class="hover:text-yellow-500">Contact us</a>
+            </div>
+
+            <!-- Icons + Buttons -->
+            <div class="flex items-center space-x-4">
+                <!-- Search Icon -->
+                <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 19a8 8 0 100-16 8 8 0 000 16zm6-2l4 4"></path>
+                    </svg>
+                </button>
+
+                <!-- Notification Icon -->
+                <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14V11a6 6 0 10-12 0v3c0 .386-.149.735-.405 1.005L4 17h5m6 0a3 3 0 11-6 0"></path>
+                    </svg>
+                </button>
+
+                <!-- Login & Register -->
+                <button class="btn btn-outline btn-sm hidden md:inline-block">Login</button>
+                <button class="btn btn-warning btn-sm hidden md:inline-block">Register</button>
+
+                <!-- Mobile Menu Button -->
+                <div class="dropdown dropdown-end md:hidden">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="#">Find a pet</a></li>
+                        <li><a href="#">Breeds</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+   
+
 </body>
 </html>
